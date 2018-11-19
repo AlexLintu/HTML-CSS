@@ -5,14 +5,20 @@ body {
 }
 
 .grid {
-
+  display: grid;
+  /*
+  grid-template-rows: 5% 30% 10% 30% 20% 5%;
+  grid-template-columns: repeat(6, 1fr);
+  */
+  grid-template: 5% 30% 10% 30% 20% 5% / repeat(6, 1fr);
 }
 
 header {
   background-color: #ffffff;
   color: #dc6363;
   padding-top: 10px;
-
+  grid-column-start: 1;
+  grid-column-end: span 6;
 }
 
 .banner {
@@ -23,7 +29,8 @@ header {
   font-weight: 300;
   letter-spacing: 3.7px;
   color: #ffffff;
-
+  grid-column-start: 1;
+  grid-column-end: span 6;
 }
 
 img {
@@ -33,7 +40,8 @@ img {
 .about {
   background-color: #f0f0f0;
   padding-bottom: 20px;
-
+  grid-column-start: 1;
+  grid-column-end: span 6;
 }
 
 .text {
@@ -116,7 +124,8 @@ footer {
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.4px;
-
+  grid-column-start: 1;
+  grid-column-end: span 6;
 }
 
 
