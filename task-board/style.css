@@ -38,8 +38,22 @@ body {
     align-self: center;
 }
 
+/* Grid settings */
 .container {
-	width: 1000px;
+  width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+}
+
+/* 3 cards grid settings */
+.card-column {
+  background-color: #ffffff;
+  min-height: 700px;
+  display: grid;
+  grid-template-rows: 20px repeat(5, 100px);
+  align-content: space-between;
+  grid-auto-rows: 100px;
 }
 
 .search-bar {
@@ -75,11 +89,6 @@ input {
 	float: left;	
   margin-top: 9px;
   margin-left: 7px;
-}
-
-.card-column {
-	background-color: #ffffff;
-  min-height: 700px;
 }
 
 .card-column h2 {
