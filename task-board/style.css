@@ -20,7 +20,7 @@ body {
 
 .navbar {
     display: grid;
-    grid-template-columns: 10px 1fr 3fr 1fr;
+    grid-template-columns: 1fr 5fr;
     position: absolute;
     width: 100%;
     height: 60px;
@@ -32,10 +32,11 @@ body {
 }
 
 .navbar h1 {
-	font-family: Poppins;
+	  font-family: Poppins;
     color: #ffffff;
     margin: 0;
     align-self: center;
+    grid-column: 2 / 4;
 }
 
 /* Grid settings */
@@ -43,27 +44,32 @@ body {
   width: 1000px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 20px;
+  grid-gap: 20px;
+  grid-area: 2 / 2 / span 1 / span 1;
 }
 
 /* 3 cards grid settings */
 .card-column {
   background-color: #ffffff;
-  min-height: 700px;
   display: grid;
-  grid-template-rows: 20px repeat(5, 100px);
-  align-content: space-between;
+  grid-template-rows: 20px repeat(6, 100px);
+  grid-gap: 10px;
+}
+
+.completed-projects {
+  grid-template-rows: 20px;
   grid-auto-rows: 100px;
 }
 
 .search-bar {
-	display: inline-block;
+  grid-column: 1 / 3;
+  display: inline-block;
+  align-self: center;
+  position: absolute;
 	width: 23%;
 	height: 40px;
 	background-color: rgba(255,255,255, 0.35);
-	left: 50px;
-  top: 8px;
-  position: absolute;
+	left: 10px;
 }
 
 input {
@@ -109,9 +115,8 @@ input {
 }
 
 .site-body {
-	position: absolute;
-	top: 100px;
-	margin-left: 50px;
+  display: grid;
+  grid-template: 2fr 10fr 1fr / 1fr 1000px 1fr;
 }
 
 .card {
