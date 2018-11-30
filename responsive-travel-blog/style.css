@@ -1,11 +1,15 @@
 /* Universal Styles */
+
 html {
   font-size: 16px;
 }
 
-
 body {
   background-color: white;
+}
+
+p {
+  min-width: 200px;
 }
 
 .image-container {
@@ -19,8 +23,9 @@ body {
 /* Banner Section */
 
 #banner {
-  
-  background-image: url('camel-background.png');
+  height: 46rem;
+  background-image: url('camel.jpeg');
+  opacity: 0.7;
   background-position: center;
   
   background-repeat: no-repeat;
@@ -31,10 +36,10 @@ body {
 }
 
 #banner h1 {
+  font-size: 3.75rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: white;
-  font-size: 3.75em;
 }
 
 /* Blog Post */
@@ -49,8 +54,8 @@ body {
 
 #blog .post {
   width: 52%;
-  
-
+  margin-top: 12.5%;
+  margin-bottom: 7.5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,11 +68,12 @@ body {
 }
 
 .post h2 {
-  font-size: 1.875em;
+  font-size: 1.875rem;
+  
 }
 
 .post h3 {
-  font-size: 1.125em;
+  font-size: 1.125rem;
   color: #999999;
 }
 
@@ -85,7 +91,7 @@ body {
 /* Blog Images */
 
 .images {
-  
+  margin-bottom: 20%;
 }
 
 .images .image-container {
@@ -99,7 +105,7 @@ footer {
   padding: 4rem 0;
   border-top: 1px solid #999999;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.125em;
+  font-size: 1.125rem;
   color: #999999;
   text-align: center;
 }
