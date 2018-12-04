@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}
+
+/* Navigation */
+nav {
+  position: fixed;
+  padding: 10px 0;
+  width: 100%;
+  border-bottom: 1px solid seashell;
+}
+
+.logo {
+  height: 50px;
+  margin: 0 10px;
+  float: left;
+}
+
+a {
+  text-decoration: underline;
+  color: seashell;
+  padding: 10px;
+  float: right;
+}
+
+/* */
+#mission {
+  position: relative;
+  top: 71px;
+  height: 700px;
+}
