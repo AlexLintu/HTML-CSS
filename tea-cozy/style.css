@@ -52,8 +52,9 @@ header {
 }
 
 /* Featured Tea Section */
-#feature-tea {
+#featured-tea {
   width: 1000px;
+  margin: 0 auto;
 }
 
 .flex-container-tea {
@@ -76,10 +77,11 @@ header {
   /* Image */
   background-image: url('img-locations-background.jpg');
   height: 500px;
-  max-width: 1200px;
+  width: 1200px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: 0 auto;
 }
 
 .flex-container-locations div {
