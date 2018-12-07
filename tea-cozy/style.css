@@ -8,12 +8,12 @@ html {
   text-align: center;
 }
 
-header, #locations {
-  margin: 0 auto;
-}
-
-header h2, h4 {
+header h2, header h4 {
   background-color: black;
+  position: relative;
+  top: 350px;
+  margin: 0;
+  padding: 7px;
 }
 /* Navigation */
 nav {
@@ -40,14 +40,15 @@ a {
 }
 
 /* Mission Section */
-#mission {
+header {
   /* Image */
   background-image: url('img-mission-background.jpg');
   height: 700px;
-  max-width: 1200px;
+  width: 1200px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: 0 auto;                                                                   
 }
 
 /* Featured Tea Section */
@@ -86,4 +87,13 @@ a {
   opacity: 1;
   width: 300px;
   margin: 15px 20px;
+}
+
+#contact {
+  height: 200px;
+}
+
+/* Footer */
+footer {
+  text-align: left;
 }
