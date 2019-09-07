@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-  <title>Textarea element</title>
+  <title>Forms Review</title>
 </head>
 
 <body>
@@ -17,14 +17,16 @@
       <h1>Create a burger!</h1>
       <section class="protein">
         <label for="patty">What type of protein would you like?</label>
-        <input type="text" name="patty" id="patty">
+        <input type="text" name="patty" id="patty" placeholder="chicken">
       </section>
       <hr>
+
       <section class="patties">
         <label for="amount">How many patties would you like?</label>
-        <input type="number" name="amount" id="amount">
+        <input type="number" name="amount" id="amount" placeholder="two">
       </section>
       <hr>
+
       <section class="cooked">
         <label for="doneness">How do you want your patty cooked</label>
         <br>
@@ -33,6 +35,7 @@
         <span>Well-Done</span>
       </section>
       <hr>
+
       <section class="toppings">
         <span>What toppings would you like?</span>
         <br>
@@ -44,6 +47,7 @@
         <label for="onion">Onion</label>
       </section>
       <hr>
+
       <section class="cheesy">
         <span>Would you like to add cheese?</span>
         <br>
@@ -53,6 +57,7 @@
         <label for="no">No</label>
       </section>
       <hr>
+
       <section class="bun-type">
         <label for="bun">What type of bun would you like?</label>
         <select name="bun" id="bun">
@@ -62,6 +67,7 @@
         </select>
       </section>
       <hr>
+
       <section class="sauce-selection">
         <label for="sauce">What type of sauce would you like?</label>
         <input list="sauces" id="sauce" name="sauce">
@@ -81,9 +87,7 @@
 
       <section class="submission">
         <input type="submit" value="Submit">
-
       </section>
-
     </form>
   </section>
 </body>
