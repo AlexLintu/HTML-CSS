@@ -54,16 +54,17 @@
           <option value="slower">Slower</option>
         </select>
         <br />
-        <datalist>
-          <label for="quote">Motivational Quote:</label>
-          <input
-            id="quote"
-            name="quote"
-            type="text"
-            required
-            list="quote-choices"
-          />
-        </datalist>
+
+        <label for="quote">Motivational Quote:</label>
+        <input
+          id="quote"
+          name="quote"
+          type="text"
+          required
+          list="quote-choices"
+        />
+        <datalist id="quote-choices"></datalist>
+        <br />
         <input type="submit" value="Form My Story!" />
       </form>
     </section>
